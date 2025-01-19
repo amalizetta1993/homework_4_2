@@ -34,8 +34,7 @@ def reg_check(user_data, reg_pattern, users_list, data_to_check=[]):
     else:
         if reg_pattern == get_reg_data()[1] or reg_pattern == get_reg_data()[2]: 
             unique = check_unique_data(user_data, data_to_check) 
-            data_to_check.append(user_data)
-            return unique   
+            data_to_check.append(user_data)   
     if match and unique == True:
         return user_data 
     
